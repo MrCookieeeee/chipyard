@@ -142,6 +142,7 @@ class WithRocketDCacheScratchpad extends Config((site, here, up) => {
   }
 })
 
+// by Ethan
 class WithTilePrefetchers extends Config((site, here, up) => {
   case TilesLocated(InSubsystem) => up(TilesLocated(InSubsystem), site) map { tp =>
     val updated = tp match {

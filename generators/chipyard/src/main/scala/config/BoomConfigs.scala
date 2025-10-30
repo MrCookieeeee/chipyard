@@ -2,6 +2,14 @@ package chipyard
 
 import org.chipsalliance.cde.config.{Config}
 
+//
+// Ethan Experimental Config
+//
+class EthanMediumBoomConfigNoTracing extends Config(
+  new boom.v4.common.WithNMediumBooms(1) ++                          
+  new chipyard.config.EthanAbstractConfig)
+
+
 // ---------------------
 // BOOM V3 Configs
 // Performant, stable baseline
